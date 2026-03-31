@@ -11,7 +11,7 @@ class Usuario extends GenericModel
     #[ORM\Column(type: 'string')]
     private $nome;
 
-    #[ORM\Column(type: 'senha')]
+    #[ORM\Column(type: 'string')]
     private $senha;
 
     public function getNome()

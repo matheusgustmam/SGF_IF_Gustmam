@@ -18,7 +18,7 @@ class Contato extends GenericModel
     #[ORM\Column(type: 'string', nullable: true)]
     private $whatsapp;
 
-    #[ORM\ManyToOne(targetEntity: Clinte::class)]
+    #[ORM\ManyToOne(targetEntity: Cliente::class)]
     #[ORM\JoinColumn(name: "clinete_id")]
     private  $cliente;
 
