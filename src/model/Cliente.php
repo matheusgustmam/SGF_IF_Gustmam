@@ -17,7 +17,7 @@ class Cliente extends GenericModel
     private $cpf;
 
     #[ORM\Column(type: 'date')]
-    private $data_nascimento;
+    private $dataNascimento;
 
     #[ORM\OneToOne(targetEntity: Endereco::class,cascade:['all'], orphanRemoval:true, fetch: 'EAGER')]
     #[ORM\joinColumn(name: 'endereco_id')]
@@ -34,6 +34,7 @@ class Cliente extends GenericModel
     public function setNome($nome)
     {
         $this->nome = $nome;
+        return $this;
     }
 
     public function getCpf()
@@ -44,16 +45,18 @@ class Cliente extends GenericModel
     public function setCpf($cpf)
     {
         $this->cpf = $cpf;
+        return $this;
     }
 
     public function getDataNascimento()
     {
-        return $this->data_nascimento;
+        return $this->dataNascimento;
     }
 
-    public function setDataNascimento($data_nascimento)
+    public function setDataNascimento($dataNascimento)
     {
-        $this->data_nascimento = $data_nascimento;
+        $this->dataNascimento = $dataNascimento;
+        return $this;
     }
 
     public function getEndereco()
@@ -64,6 +67,7 @@ class Cliente extends GenericModel
     public function setEndereco($endereco)
     {
         $this->endereco = $endereco;
+        return $this;
     }
 
     public function getContatos()
@@ -74,6 +78,8 @@ class Cliente extends GenericModel
     public function setContatos($contatos)
     {
         $this->contatos = $contatos;
+        return $this;
     }
+
 
 }

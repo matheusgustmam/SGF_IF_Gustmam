@@ -16,7 +16,7 @@ class ClienteDaoTest extends TestCase
     {
         $cliente = new Cliente();
         $cliente->setNome("Henrique Pivetti");
-        $cliente->setData_nascmineto(new DateTime("1990-01-01"));
+        $cliente->setDataNascimento(new DateTime("1990-01-01"));
         $cliente->setCpf("111.111.111-11");
         $clienteInserido = ClienteDao::salvar($cliente);
         $this->assertNotNull($clienteInserido->getId());
@@ -27,7 +27,7 @@ class ClienteDaoTest extends TestCase
         $cliente = new Cliente();
         $cliente->setNome("Isabela");
         $cliente->setCpf("123.456.789-00");
-        $cliente->getDataNascimento(new DateTime("2005-07-15"));
+        $cliente->setDataNascimento(new DateTime("2005-07-15"));
 
         $endereco = new Endereco();
         $endereco->setLogradouro("Rua A");
