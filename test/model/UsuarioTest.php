@@ -2,7 +2,7 @@
 namespace test\model;
 
 use model\Usuario;
-use PHPunit\Framework\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class UsuarioTest extends TestCase
 {

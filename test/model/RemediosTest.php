@@ -2,7 +2,7 @@
 
 namespace test\model;
 use model\Remedios;
-use PHPunit\Framework\testCase;
+use PHPUnit\Framework\testCase;
 
 class RemediosTest extends TestCase
 {
