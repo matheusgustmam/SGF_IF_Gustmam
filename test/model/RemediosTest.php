@@ -3,6 +3,7 @@
 namespace test\model;
 use model\Remedios;
 use PHPUnit\Framework\testCase;
+use DateTime;
 
 class RemediosTest extends TestCase
 {
@@ -10,7 +11,7 @@ class RemediosTest extends TestCase
     {
         $remedio = new Remedios();
         $remedio->setNome("Rinosouro");
-        $remedio->setValidade(new \DateTime("2027-02-02"));
+        $remedio->setValidade(new DateTime("2027-02-02"));
         $remedio->setDataFabric(new DateTime("2026-02-02"));
         $remedio->setEmpresa("matemoCorp");
         $remedio->setUnidade("25");

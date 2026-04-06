@@ -5,6 +5,7 @@ namespace test\dao;
 use dao\RemediosDao;
 use model\Remedios;
 use PHPUnit\Framework\TestCase;
+use DateTime;
 
 class RemediosDaoTest extends TestCase
 {
