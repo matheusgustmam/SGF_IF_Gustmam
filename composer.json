@@ -25,6 +25,7 @@
         "doctrine/orm": "^3.6",
         "symfony/cache": "^7.4",
         "symfony/console": "^7.4",
-        "doctrine/dbal": "^4.4"
+        "doctrine/dbal": "^4.4",
+        "nikic/fast-route": "^1.3"
     }
 }
