@@ -10,7 +10,7 @@ session_start();
 require "../vendor/autoload.php";
 
 # Define uma constante com o caminho base do projeto
-define('BASE_URL', '/ProjetoExemplo');
+define('BASE_URL', '/SGF_IF_Gustmam');
 
 // Configuração do "Dispatcher" (Despachante) de rotas
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
