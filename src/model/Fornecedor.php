@@ -1,5 +1,6 @@
 <?php
 namespace model;
+#[ORM\Entity]
 
 class Fornecedor extends GenericModel
 {
