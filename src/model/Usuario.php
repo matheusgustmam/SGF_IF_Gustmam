@@ -14,6 +14,9 @@ class Usuario extends GenericModel
     #[ORM\Column(type: 'string')]
     private $senha;
 
+    #[ORM\Column(type: 'string')]
+    private $funcao;
+
     public function getNome()
     {
         return $this->nome;
@@ -36,5 +39,15 @@ class Usuario extends GenericModel
         return $this;
     }
 
+    public function getFuncao()
+    {
+        return $this->funcao;
+    }
+
+    public function setFuncao($funcao)
+    {
+        $this->funcao = $funcao;
+        return $this;
+    }
 
 }
