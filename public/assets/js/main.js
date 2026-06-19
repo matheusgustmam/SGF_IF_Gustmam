@@ -3,6 +3,7 @@ $(document).ready(function(){
 })
 
 
+
 $("#formCadsatroCliente").validate({
     rules: {
 
