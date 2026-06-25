@@ -19,10 +19,11 @@ class ClienteController
             $cliente = new Cliente();
             //
             $cidades = CidadeDAO::listar();
-            require __DIR__ . "/../view/novoClienteView.php";
-        } catch (Exception $e) {
-            echo 'Falha ao fazer o cadastro: ' . $e->getMessage();
-            header("Location: " . BASE_URL . '/cliente');
+            require __DIR__ . "/../view/cadastro-cliente.php";
+        } catch (Exception $ex) {
+            $_SESSION["mensagem_erro"] = 'Falha na listagem das cidades';
+            $_SESSION["mensagem_sucesso"] = $ex->getMessage();
+            header("Location: " . BASE_URL . '/clientes');
         }
     }
 
@@ -42,6 +43,7 @@ class ClienteController
 
             $cidade = $cidade_id ? CidadeDAO::buscarID($cidade_id) : null;
             if (empty($cidade) || $cidade === null) ;
+                throw new Exception("Cidade não encontrada");
 
             $endereco = $cliente->getEndereco() ?? new Endereco();
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@MySQL XAMPP" uuid="3f4bc10a-1412-4aea-af24-466912a4155e">
+    <data-source source="LOCAL" name="db_testes2@localhost" uuid="e563ee35-017f-45c0-884b-72e4e85bb3fe">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306/db_sgf_if_gustmam</jdbc-url>
+      <jdbc-url>jdbc:mariadb://localhost:33306/db_testes2</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

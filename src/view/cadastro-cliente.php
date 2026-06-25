@@ -11,7 +11,7 @@
 <?php require_once 'templates/template-menu.php'; ?>
 
 <div class="mt-5">
-    <form id="formCadastroCliente" action="<?= BASE_URL. '/cleintes/cadastrar' ?>"
+    <form id="formCadastroCliente" action="<?= BASE_URL. '/clientes/cadastrar' ?>"
         method="POST"
         enctype="multipart/form-data">
 
@@ -52,7 +52,7 @@
     <div class="row">
         <div class="d-flex justify-content-between align-items-center">
             <button type="submit" class="btn btn-success">Cadastrar</button>
-            <a href="<?= BASE_URL.index() ?>" class="btn btn-primary">Voltar</a>
+            <a href="<?= BASE_URL.'/clientes' ?>" class="btn btn-primary">Voltar</a>
         </div>
     </div>
     </form>

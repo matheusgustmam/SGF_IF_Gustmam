@@ -15,11 +15,12 @@ define('BASE_URL', '/SGF_IF_Gustmam');
 // Configuração do "Dispatcher" (Despachante) de rotas
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
     // Aqui você define suas rotas:
-    $r->get('/', 'ClienteController@index');
-    $r->get('/inicio', 'ClienteController@index');
     $r->get('/clientes', 'ClienteController@listar');
     $r->get('/clientes/novo', 'ClienteController@novo');
-    $r->post('/clientes', 'ClienteController@salvar');
+    $r->get('/clientes/{id}/editar', 'ClienteController@editar');
+    $r->get('/clientes/{id}', 'ClienteController@buscar');
+    $r->post('/clientes/cadastrar', 'ClienteController@cadastrar');
+    $r->post('/clientes/{id}/remover', 'ClienteController@remover');
 });
 
 // Pega apenas o caminho da URL (ex: de "/projeto/clientes?id=1" extrai apenas "/projeto/clientes")
