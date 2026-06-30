@@ -4,7 +4,6 @@ namespace utils;
 
 use Cloudinary\Cloudinary;
 
-use Dotenv\Dotenv;
 
 use Exception;
 
@@ -17,8 +16,6 @@ class FileUpload
 
         if (self::$storage === null) {
 
-            $dotenv = Dotenv::createImmutable(__DIR__, 2);
-            $dotenv->load();
 
             self::$storage = new Cloudinary($_ENV['CLOUDINARY_URL']);
         }
